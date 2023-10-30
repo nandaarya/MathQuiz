@@ -70,6 +70,7 @@
 
         ' Start the timer.
         timeLeft = 30
+        timeLabel.BackColor = Color.Red
         timeLabel.Text = "30 seconds"
         Timer1.Start()
     End Sub
