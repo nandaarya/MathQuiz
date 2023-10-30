@@ -44,6 +44,7 @@ Partial Class Form1
         dividedRightLabel = New Label()
         Label11 = New Label()
         quotient = New NumericUpDown()
+        startButton = New Button()
         CType(sum, ComponentModel.ISupportInitialize).BeginInit()
         CType(difference, ComponentModel.ISupportInitialize).BeginInit()
         CType(product, ComponentModel.ISupportInitialize).BeginInit()
@@ -115,7 +116,7 @@ Partial Class Form1
         sum.Location = New Point(314, 78)
         sum.Name = "sum"
         sum.Size = New Size(100, 47)
-        sum.TabIndex = 6
+        sum.TabIndex = 1
         ' 
         ' minusLeftLabel
         ' 
@@ -163,7 +164,7 @@ Partial Class Form1
         difference.Location = New Point(314, 131)
         difference.Name = "difference"
         difference.Size = New Size(100, 47)
-        difference.TabIndex = 11
+        difference.TabIndex = 2
         ' 
         ' timesLeftLabel
         ' 
@@ -211,7 +212,7 @@ Partial Class Form1
         product.Location = New Point(314, 184)
         product.Name = "product"
         product.Size = New Size(100, 47)
-        product.TabIndex = 16
+        product.TabIndex = 3
         ' 
         ' dividedLeftLabel
         ' 
@@ -259,13 +260,25 @@ Partial Class Form1
         quotient.Location = New Point(314, 237)
         quotient.Name = "quotient"
         quotient.Size = New Size(100, 47)
-        quotient.TabIndex = 21
+        quotient.TabIndex = 4
+        ' 
+        ' startButton
+        ' 
+        startButton.AutoSize = True
+        startButton.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point)
+        startButton.Location = New Point(147, 299)
+        startButton.Name = "startButton"
+        startButton.Size = New Size(128, 42)
+        startButton.TabIndex = 0
+        startButton.Text = "Start Quiz"
+        startButton.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(482, 353)
+        Controls.Add(startButton)
         Controls.Add(quotient)
         Controls.Add(Label11)
         Controls.Add(dividedRightLabel)
@@ -320,4 +333,5 @@ Partial Class Form1
     Friend WithEvents dividedRightLabel As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents quotient As NumericUpDown
+    Friend WithEvents startButton As Button
 End Class
