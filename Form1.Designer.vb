@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         timeLabel = New Label()
         Label1 = New Label()
         plusLeftLabel = New Label()
@@ -45,6 +46,7 @@ Partial Class Form1
         Label11 = New Label()
         quotient = New NumericUpDown()
         startButton = New Button()
+        Timer1 = New Timer(components)
         CType(sum, ComponentModel.ISupportInitialize).BeginInit()
         CType(difference, ComponentModel.ISupportInitialize).BeginInit()
         CType(product, ComponentModel.ISupportInitialize).BeginInit()
@@ -273,6 +275,10 @@ Partial Class Form1
         startButton.Text = "Start Quiz"
         startButton.UseVisualStyleBackColor = True
         ' 
+        ' Timer1
+        ' 
+        Timer1.Interval = 1000
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -334,4 +340,5 @@ Partial Class Form1
     Friend WithEvents Label11 As Label
     Friend WithEvents quotient As NumericUpDown
     Friend WithEvents startButton As Button
+    Friend WithEvents Timer1 As Timer
 End Class
